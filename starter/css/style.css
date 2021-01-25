@@ -1,6 +1,5 @@
 /*
 COLORS:
-
 Light green: #7ed56f
 Medium green: #55c57a
 Dark green: #28b485
@@ -49,12 +48,14 @@ height: 35px;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
     color: #ffffff;
     text-transform: uppercase;
     backface-visibility: hidden;
+    margin-bottom: 60px;
 
 }
 
@@ -108,4 +109,29 @@ height: 35px;
         opacity: 1;
         transform: translate(0);
     }
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0,0,0,.5);
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #777;
 }
